@@ -8,15 +8,48 @@ What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
 what is class?
 A. Class is a blue print of an object, everything we write inside a class.
+
 What is object?
+A. An object is an instance of a class.
+
 What is the entry point of an application?
+A. the main method is the entry point of an application.
+
 Why main is static?
+A. main method is static because it lets us invoke to JVM without creating an instance of the class, and since the
+   main method is the entry point of an application so we make main method static.
+
 Which class is the superclass of all classes?
+A. java.lang.object is a superclass of all classes. The object class is the superclass for every class as Java is
+   completely object oriented.
+
 What is difference between path and classpath variables?
+A. PATH is the environment variable used by the operating system to locate the JDK binarieslike 'java' or 'javac'
+   command is used to run a java program or load the source code, and CLASSPATH is an environment variable used by the
+   java compiler an JVM to locate and load the required class file.
+
 What is the difference between an Interface and Abstract class?
+A. Interface is completely abstract, we can only declare methods there, we can't implement those. but in Abstract class
+   we can have unimplemented and implemented method.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. no we can't make object from an interface and abstract class. we can instantiate interface or abstract class with
+   a concrete class that means we can create object from a concrete class.
+
 what is Access Specifier?
+A. Access Specifier modifies whether other classes can use a particular field or invoke a particular method from
+   another class. normally there are 3 types of access specifier- public, private & protected. but classes and interfaces
+   can only have public and default access specifier.
+
 What is OOP ? Define each feature of java OOP.
+A. OOP concepts are the main ideas behind the java object oriented programming. features-
+   1) Abstraction- its implementation hiding. an abstract class can't be instantiated, it must
+   have a concrete subclass which will implement the abstract methods of that abstract class.
+   2) Encapsulation- its data hiding. its about keeping field within a class private, then providing access to them via public methods.
+   its a protective barrier that keeps tha data and code safe within the class itself.
+   3) Inheritance- it lets us create new classes that shares some of the attributes of existing classes.
+
+   4) Polymorphism-
 What is Java Package and which package is imported by default?
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?
