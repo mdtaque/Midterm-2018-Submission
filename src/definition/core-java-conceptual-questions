@@ -48,38 +48,129 @@ A. OOP concepts are the main ideas behind the java object oriented programming. 
    2) Encapsulation- its data hiding. its about keeping field within a class private, then providing access to them via public methods.
    its a protective barrier that keeps tha data and code safe within the class itself.
    3) Inheritance- it lets us create new classes that shares some of the attributes of existing classes.
+   4) Polymorphism- if one task is performed by different ways, it is known as polymorphism. we can use method overloading and
+   method overriding to achieve polymorphism.
+   Method Overloading- its a feature that allows a class to have more than one method having the same name but different parameter
+   Method Overriding- its a feature that allows a subclass or child class to have a specific implementation
+   of a method that is already provided by one of its superclasses or parent class.
 
-   4) Polymorphism-
 What is Java Package and which package is imported by default?
+A. Packages are used in java to prevent naming conflicts, to control access, to make searching/locating and usage of classes,interfaces,
+   enumerations and annotations easier. java.lang package is imported by default.
+
 What is API? Name list of API that you have used so far.
+A. API(Application Programming Interface) is a software intermediary that allows two applications to talk to each other.
+   list of API- java.lang, java.io, java.util, java.sql etc.
+
 Does java support multiple inheritance, explain why or why not?
+A. no, because it creates confusion and complexity. to avoid ambiguity error java does not support multiple inheritance through class.
+   but we can do it through interface.
+
 What is method overloading and when it happens?
+A. its a feature that allows a class to have more than one method having the same name but different parameter.
+
 Explain exceptions in java and how to handle it.
+A. Exceptions happen in runtime and break the normal flow of program. that means when an exception occurs at any point the program won't
+   be run from that point even if the rest of the codes are correct. Exception is handled by five keywords such as try, catch, throw,
+   throws and finally.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A. static method lets us access to the method without creating an object of the class. static variable belongs to class and non static
+   variable belongs to an object. we can access static variable from anywhere.
+
 What is final and how it has been used variables and methods?
+A. final is a keyword that is used in variable to make it constant that means once the variable is initialized, we can't change the
+   value anymore. and final methods can't be overrided. a final class can't be subclassed.
+
 What is final, finally and finalize?
+A. finally is a java reserved keyword that is used to execute something such as we can use final in try catch block. so when the try block
+   throws an exception and catch block is unable to handle that exception then finally block will definitely execute. finalize is used to
+   destroy object. java is also a garbage collector that collects object no longer needed by program. but if we don't need the object we
+   can destroy it by using the keyword finalize.
+
 What is a constructor ?
+A. Constructor is used to instantiate an object by using new operator. it is an instance method with the same name as the class name.
+
 Can we have multiple constructors in a class?
+A. Yes.
+
 If we don't have a constructor declared, what is called during the object creation?
+A. Default constructor.
+
 What is "this" keyword in java ?
+A. this keyword refers to the class itself. to see all the methods and variables in a class we can use 'this' keyword instead of
+   class name. this lets us access to all the methods and variables in a class we are.
+
 What is "super" keyword in java? How many possible way can you use?
+A. Super keyword lets us invoke/initialize the superclass resources in a subclass such as constructors, methods and variables.
+
 What is JVM stand for ?
+A. Java Virtual Machine.
+
 Is JVM platform independent?
+A. Yes.
+
 What version of java are you using?
-What is JAR stand for ?
+A. java version "10.0.2" 2018-07-17
+   Java(TM) SE Runtime Environment 18.3 (build 10.0.2+13)
+   Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
+
+What is JAR stand for?
+A. Java Archive.
+
 What is the difference between JDK and JVM?
+A. JDK is Java Development Kit which is used to provide the environment to develop Java Application.
+   JVM is Java Virtual Machine which is responsible to run our java program line by line. it is a very important part of both JDK
+   and JRE because it is contained or inbuilt in both.
+
 What is the difference between JVM and JRE?
+A. JVM is Java Virtual Machine which is responsible to run our java program line by line. it is a very important part of both JDK
+   and JRE because it is contained or inbuilt in both.
+   JRE is Java Runtime Environment which provides the the required environment to run a java application.
+
 What is compile time and run time?
+A. when java compile the .java file to .class file, that stage is called compile time.
+   java loader loads the .class file in JVM and JVM executes the application. this execution time is known as run time.
+
 What is heap?
+A. heap is a part of RAM. it contains the object during the run time.
+
 How java manage it's memory?
+A. java manages its memory with its built in garbage collection. it lets us create new objects without worrying explicitly about memory
+   allocation and deallocation.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A. String is immutable, if we try to alter their values, another object gets created, whereas
+   StringBuffer and StringBuilder are mutable so they can change their values. StringBuffer methods are
+   synchronized while StringBuilder methods are non-synchronized, it means that for thread-safe operations
+   we must choose StringBuffer class instead of StringBuilder.
+
 What is Singleton class?
+A. The singleton class is used to control object creation by keeping private constructor. Singleton
+   pattern helps us to keep only one instance of a class at any time. We can make constructor as private.
+   So that user can not create an object from outside of the class.
+
 What is Serialization and Deserialization?
+A. Serialization is a process of converting an object into a byte stream(sequence of bytes). Deserialization is the reverse process where
+   the byte stream is used to recreate the actual object in memory. This mechanism is used to persist the object.
+
 when to use transient variable in java?
+A. when a variable is marked as transient, its object won't be serialized during serialization. we use the transient keyword to indicate
+   to the Java virtual machine that the indicated variable is not part of the persistent state of the object.
+
 Difference between while and do..while loop?
+A. in while loop it will check the condition first and if the condition is true then it will run. but in do while loop it will do one
+   task first and then will check the condition.
+
 What is Enum?
+A. Enum is a constant data type such as week, months, year. So when we have pre defined data then we can use enam. We can
+   declare enam inside the class or outside the class.
+
 What is Iterator?
+A. Iterators are used in Collection framework in Java to retrieve elements one by one.
+
 Which one will take more memory, an int or Integer?
+A. 
 Why is String Immutable in Java?
 What is constructor chaining in Java?
 The difference between Serial and Parallel Garbage Collector?
