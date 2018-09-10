@@ -1,11 +1,24 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A. A programming language is a special language programmers use to develop software programs, scripts, or other
+   sets of instructions for computers to execute.
+
 What jdk contains or composed of and define each components?
+A. JDK contains JRE and development tools such as compilers & debuggers.
+   JRE- to run java application the required environment is JRE.
+
 What is IDE?
+A. IDE means Integrated Development Environment to develop applications. Eclipse, IntelliJ, Netbeans are
+   some of common IDE.
+
 What are the IDEs available in the market to support java?
+A. Eclipse, IntelliJ, Netbeans, JDeveloper etc.
+
 Explain the entire java life cycle.
+A. the java compiler converts the source code into bytecodes and the JVM loads and verify those bytecodes and
+   executes the codes and output is sent to the operating system.
+
 what is class?
 A. Class is a blue print of an object, everything we write inside a class.
 
@@ -170,23 +183,98 @@ What is Iterator?
 A. Iterators are used in Collection framework in Java to retrieve elements one by one.
 
 Which one will take more memory, an int or Integer?
-A. 
+A. Integer.
+
 Why is String Immutable in Java?
+A. Security: parameters are typically represented as String in network connections, database connection urls,
+   usernames/passwords etc. If it were mutable, these parameters could be easily changed.
+   Synchronization and concurrency: making String immutable automatically makes them thread safe thereby
+   solving the synchronization issues.
+   Caching: when compiler optimizes our String objects, it sees that if two objects have same value
+   (a="test", and b="test") and thus we need only one string object (for both a and b, these two will
+   point to the same object).
+   Class loading: String is used as arguments for class loading. If mutable, it could result in wrong class
+   being loaded (because mutable objects change their state).
 What is constructor chaining in Java?
+A. Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+   Constructor chaining can be done in two ways:
+   Within same class: It can be done using this() keyword for constructors in same class
+   From base class: by using super() keyword to call constructor from the base class.
+   Constructor chaining occurs through inheritance.
+
 The difference between Serial and Parallel Garbage Collector?
+A. The serial collector uses a single thread to perform all garbage collection work, which is more efficient
+   because of no communication overhead between threads. It is best suited to single processor machines.
+   Parallel collctor performs minor collections in parallel, which can significantly reduce garbage collection.
+   It is intended for applications with medium-size to large sized data sets that are run on multiprocessor and multi
+   threaded hardware.
+
 What is JIT stands for?
+A. Just In Time.
+
 Explain Java Heap space and Garbage collection?
+A. Java has an automatic garbage collection system. it collects the object as garbage when that object loses its reference
+   variable that means that object is no longer needed by the application.
+   Java applications are only allowed to use a limited amount of memory. This limit is specified during application startup.
+   To make things more complex, Java memory is separated into two different regions. These regions are called Heap space and
+   Permgen. the unused objects remain in Java heap space indefinitely.
+
 Can you guarantee the garbage collection process?
+A. No it is not guaranteed process. Reason- Being an automatic process, programmers need not initiate the garbage collection
+   process explicitly in the code. System.gc() and Runtime.gc() are hooks to request the JVM to initiate the garbage
+   collection process.
+
 What is the difference between stack and heap in Java?
+A. Heap and Stack are part of JVM but they are used for different purposes. Differences are as follows:
+   1. Size: Heap space in Java is much bigger than the Stack memory.
+   2. Resizing: JVM allows to resize both heap and stack, but need to use different JVM flags for that.
+   3. Usage: Heap memory is used to store objects, no mater where u created that object. Stack memory is used to
+     store primitive variables and reference variables.
+
 What is reflection in java and why is it useful?
+A. Reflection is an API which is used to examine or modify the behavior of methods, classes, interfaces at runtime.
+   The required classes for reflection are provided under java.lang.reflect package.
+   Reflection gives us information about the class to which an object belongs and also the methods of that class which can
+   be executed by using the object.
+   Through reflection we can invoke methods at runtime irrespective of the access specifier used with them.
+   Reflection can be used to get information about –
+   Class The getClass() method is used to get the name of the class to which an object belongs.
+   Constructors The getConstructors() method is used to get the public constructors of the class to which an object belongs.
+   Methods The getMethods() method is used to get the public methods of the class to which an objects belongs.
+
 what is multithreading in java?
+A. Multithreading in java is a process of executing multiple threads simultaneously. A thread is a lightweight sub-process,
+   the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
 What is the use of synchronization in Java?
+A. Synchronized keyword in Java is used to provide mutually exclusive access to a shared resource with multiple threads in
+   Java. Synchronization in Java guarantees that no two threads can execute a synchronized method which requires the same
+   lock simultaneously or concurrently.
+
 What is Framework?
+A. A framework, or software framework, is a platform for developing software applications. It provides a foundation on which
+   software developers can build programs for a specific platform. For example, a framework may include predefined classes
+   and functions that can be used to process input, manage hardware devices, and interact with system software.
+
 What are the testing Framework available in java?
+A. JUnit, TestNG, Cucumber, Mockito, DBUnit etc.
+
 Difference between jUnit and testNG?
+A. TestNG is similar to JUnit. Few more functionalities are added to it such as Dependency Test, Group Test that makes
+   TestNG more powerful than JUnit.
+
 What are the dependencies for this project?
+A. mongo-java-driver.jar, mysql-connector-java.jar, testng.jar
+
 what is dependency injection in java?
+A. Dependency injection is a concept valid for any programming language. The general concept behind dependency injection is
+   called Inversion of Control. A Java class has a dependency on another class, if it uses an instance of this class.
+
 What is static binding and dynamic binding?
+A. Static Binding: The binding which can be resolved at compile time by compiler is known as static or early binding. Binding
+   of all the static, private and final methods is done at compile-time.
+   Dynamic Binding: In Dynamic binding compiler doesn’t decide the method to be called. Overriding is a perfect example of
+   dynamic binding. In overriding both parent and child classes have same method.
 
 
 
