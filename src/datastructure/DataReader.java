@@ -27,7 +27,7 @@ public class DataReader {
 
         FileReader fr = null;
         BufferedReader br = null;
-        String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+        String textFile = "/Users/mdtaque/JAVA/MidtermJuly2018/src/data/self-driving-car";
 
         try {
             fr = new FileReader(textFile);
