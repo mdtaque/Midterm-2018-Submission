@@ -6,10 +6,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProcessStudentInfo {
 
@@ -59,13 +56,29 @@ public class ProcessStudentInfo {
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
 				
 				//add Selenium ArrayList data into map.
+                list.put("Selenium", seleniumStudents);
 			
 				//add Qtp ArrayList data into map.
+                list.put("Qtp", qtpStudents);
 		
 		      	
 				//Retrieve map data and display output.
+                for(Map.Entry<String,List<Student>> x : list.entrySet()){
+                    List<Student> studentList = (List<Student>) list.get(x.getKey());
+                    System.out.println("\nProfile of Students of "+x.getKey()+" classes: \n");
+                    for(Student studentProfile : studentList) {
+                        String id = studentProfile.getId();
+                        String firstName = studentProfile.getFirstName();
+                        String lastName = studentProfile.getLastName();
+                        String grade = studentProfile.getScore();
+                        System.out.println("Student (id="+id+") "+firstName+" "+lastName+"         Grade= "+grade);
+
+                    }
+                }
+
 
 
 
